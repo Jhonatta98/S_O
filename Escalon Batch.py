@@ -54,8 +54,6 @@ def main():
         # print(gerar_palavra(randint(1,10)))
     
     
-    # ----------------------------------------palavras geradas---------------------------------------- #
-
     
     print("-----------------------------")
     print("Palavras geradas:")
@@ -63,35 +61,32 @@ def main():
         print("{} ->  {}".format(count, p))
         count +=1
 	
-    # ------------------------------------first_come_first_served------------------------------------- #
-    
+    #FCFS
     print("-----------------------------")
     print("first come first served:")
     inicio = time.time()
     first_come_first_served(palavras)
     fim = time.time()
-    print("Tempo de execucao FCFS: {} ms".format((fim-inicio)*1000))
+    print("FCFS: {} ms de Tempo de execucao ".format((fim-inicio)*1000))
     print("-----------------------------")
     
 
-    # ---------------------------------------shortest_job_first--------------------------------------- #
-    
+    # SJF
     print("shortest job first:")
     inicio = time.time()
     shortest_job_first(palavras)
     fim = time.time()
-    print("Tempo de execucao SJF: {} ms".format((fim-inicio)*1000))
+    print("SJF: {} ms de Tempo de execucao ".format((fim-inicio)*1000))
     
     print("-----------------------------")
     
-    # ------------------------------------shortest_remaing_time_next---------------------------------- #
-
+    # SRTN
     print("shortest remaing time next:")
     inicio = time.time()
     shortest_remaing_time_next()
     fim = time.time()
     time.sleep(2)
-    print("Tempo de execucao SRTN: {} ms".format((fim-inicio)*1000))
+    print("SRTN: {} ms de Tempo de execucao".format((fim-inicio)*1000))
     
     
 
